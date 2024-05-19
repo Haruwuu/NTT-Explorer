@@ -1,0 +1,154 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  padding: 10px 0 10px 0;
+}
+
+.cover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../assets/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+}
+
+.cover h1 {
+  font-size: 50px;
+  margin-top: 90px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #050e11;
+}
+
+.footer .row:nth-child(2) {
+  padding-top: 10px;
+}
+
+.footer .row:nth-child(3) {
+  padding-top: 90px;
+}
+
+.destinasi .container,
+.kuliner .container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.destinasi h2,
+.kuliner h2 {
+  margin-bottom: 25px;
+}
+
+.destinasi .image-container,
+.kuliner .image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.destinasi .overlay,
+.kuliner .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: 0.9s ease;
+}
+
+.destinasi .image-container:hover .overlay,
+.kuliner .image-container:hover .overlay {
+  opacity: 1;
+}
+
+.destinasi .text,
+.kuliner .text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: justify;
+  width: 100%;
+  padding: 15px;
+}
+
+.aboutus {
+  background-color: rgb(231, 231, 231);
+  padding-top: 95px;
+}
+
+.aboutus .fotoprof {
+  max-width: 125px;
+  border-radius: 100px;
+}
+
+.aboutus .kolomprof {
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+  padding: 30px 10px;
+  width: 250px;
+  height: 320px;
+  margin: 20px 15px;
+  margin-bottom: 40px;
+  box-shadow: 0px 10px 13px rgba(0, 0, 0, 0.5);
+}
+
+.aboutus .judul {
+  margin-top: -40px;
+  margin-bottom: 50px;
+}
+
+.aboutus p {
+  margin-top: 20px;
+}
+
+.aboutus .kolomprof img {
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.aboutus .kolomprof:hover img {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.6);
+}
+
+.question-container {
+    margin-bottom: 20px;
+}
+  
+.options-container {
+    display: flex;
+    flex-direction: column;
+}
+  
+.option {
+    margin-bottom: 10px;
+}
+  
+input[type='radio'] {
+    margin-right: 5px;
+}
+
+.skor {
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .gallery .galleryimg {
+    margin-top: 38px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery .galleryimg {
+    margin-top: 38px;
+  }
+}
